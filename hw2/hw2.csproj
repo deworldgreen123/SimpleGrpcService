@@ -31,6 +31,6 @@
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
     </ItemGroup>
     <ItemGroup>
-        <Protobuf Include="Protos\product.proto" GrpcServices="Server" />
+        <Protobuf Include="Protos\product.proto" />
     </ItemGroup>
 </Project>

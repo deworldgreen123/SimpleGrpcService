@@ -20,7 +20,8 @@ public class FilterProfile : Profile
                 operation => operation.MapFrom(from => from.PageSize))
             .ReverseMap();
         
-        CreateMap<DateTime, Timestamp>().ConvertUsing(x => x.ToTimestamp());
+        CreateMap<DateTime, Timestamp>().ConvertUsing(
+            x => x.ToTimestamp());
         CreateMap<Timestamp, DateTime>().ConvertUsing(x => x.ToDateTime());
     }
 }

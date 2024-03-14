@@ -10,7 +10,7 @@ package product;
 service ProductService {
   rpc CreateProduct (CreateProductRequest) returns (CreateProductResponse){
     option (google.api.http) = {
-      get: "/v1/product/create_product"
+      post: "/v1/product/create_product"
     };
   }
   rpc GetProductList (GetProductListRequest) returns (GetProductListResponse){

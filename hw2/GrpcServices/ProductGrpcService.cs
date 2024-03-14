@@ -5,7 +5,7 @@ using FluentValidation;
 
 namespace hw2.GrpcServices;
 
-public class ProductGrpcService : ProductService.ProductServiceBase 
+public class ProductGrpcService : ProductService.ProductServiceBase
 {
     private readonly IProductService _service;
     private readonly IMapper _mapper;

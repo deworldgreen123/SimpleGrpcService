@@ -23,6 +23,10 @@ public class ProductRepository : IProductRepository
 
     public bool Update(Product product)
     {
+        if (!Exist(product.ProductId))
+        {
+            return false;
+        }
         _productsDictionary[product.ProductId] = product;
         return true;
     }
